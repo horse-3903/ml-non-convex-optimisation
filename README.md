@@ -14,16 +14,16 @@ Approximating global minima of non-convex benchmark functions using machine lear
 
 ## Overview
 
-This research project investigates strategies for optimising highly non-convex, multimodal functions — a class of problems that defeats standard gradient-based methods due to numerous local minima. Three optimisation paradigms are compared: gradient descent, Bayesian optimisation, and evolutionary algorithms (differential evolution). The benchmark suite includes the Rosenbrock, Rastrigin, and Ackley functions, all of which are canonical non-convex test cases in the optimisation literature.
+This research project investigates strategies for optimising highly non-convex, multimodal functions, a class of problems that defeats standard gradient-based methods due to numerous local minima. Three optimisation paradigms are compared: gradient descent, Bayesian optimisation, and evolutionary algorithms (differential evolution). The benchmark suite includes the Rosenbrock, Rastrigin, and Ackley functions, all of which are canonical non-convex test cases in the optimisation literature.
 
 ---
 
 ## Features
 
-- **Three Optimisation Strategies** — Gradient descent, Bayesian optimisation, and differential evolution implemented and benchmarked side-by-side
-- **Standard Benchmark Functions** — Rosenbrock, Rastrigin, and Ackley functions with known global minima for ground-truth comparison
-- **Quantitative Results Logging** — Optimised values and coordinates saved as JSON for reproducibility and analysis
-- **Modular Architecture** — Each optimiser and function is independently importable for extension
+- **Three Optimisation Strategies**: Gradient descent, Bayesian optimisation, and differential evolution implemented and benchmarked side-by-side
+- **Standard Benchmark Functions**: Rosenbrock, Rastrigin, and Ackley functions with known global minima for ground-truth comparison
+- **Quantitative Results Logging**: Optimised values and coordinates saved as JSON for reproducibility and analysis
+- **Modular Architecture**: Each optimiser and function is independently importable for extension
 
 ---
 
@@ -85,9 +85,9 @@ Non-convex functions have multiple local minima, making it trivially easy for gr
 
 ### Optimisation Methods
 
-1. **Gradient Descent** — Standard first-order method using PyTorch autograd; serves as a baseline and illustrates the local-minimum problem.
-2. **Bayesian Optimisation** — Surrogate model-based approach that builds a probabilistic model of the objective and uses an acquisition function (e.g., Expected Improvement) to select the next query point.
-3. **Evolutionary Algorithm (Differential Evolution)** — Population-based stochastic method from `scipy.optimize.differential_evolution` that evolves candidate solutions using mutation, crossover, and selection without gradient information.
+1. **Gradient Descent**: Standard first-order method using PyTorch autograd; serves as a baseline and illustrates the local-minimum problem.
+2. **Bayesian Optimisation**: Surrogate model-based approach that builds a probabilistic model of the objective and uses an acquisition function (e.g., Expected Improvement) to select the next query point.
+3. **Evolutionary Algorithm (Differential Evolution)**: Population-based stochastic method from `scipy.optimize.differential_evolution` that evolves candidate solutions using mutation, crossover, and selection without gradient information.
 
 ### Pipeline
 
